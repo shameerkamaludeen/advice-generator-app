@@ -1,0 +1,145 @@
+/* || Typography */
+
+body {
+    letter-spacing: 0.2px;
+    word-spacing: 0.8px;
+    font-weight: 400;
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.section-advice .advice-id span {
+    color: hsl(150, 100%, 66%);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    letter-spacing: 4.5px;
+}
+
+.section-advice .advice {
+    color: hsl(193, 38%, 86%);
+    font-size: 1.75rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.section-advice .advice.loading {
+    font-size: 1rem;
+}
+
+/* || Layout */
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    flex: 0;
+}
+
+/* || Section advice */
+
+.section-advice {
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 15px;
+    padding: 4em 2.5em 6.4em;
+    width: 92%;
+    max-width: 54.2em;
+    position: relative;
+    margin: 3em auto;
+}
+
+.section-advice .wrapper-devider {
+    text-align: center;
+}
+
+.section-advice .wrapper-devider img {
+    width: 100%;
+}
+
+.section-advice > button {
+    border-radius: 50px;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(150, 100%, 66%);
+    outline: none;
+    border: none;
+    position: absolute;
+    /* This negatice value is the half size of the button */
+    bottom: -3.25em;
+    /* To make center substracting the half size of the button */
+    left: calc(50% - 3.25em);
+    cursor: pointer;
+}
+
+.section-advice > button:hover:enabled, 
+.section-advice > button:focus {
+    box-shadow: 0 0 25px hsl(150deg 100% 66%);
+    transition: box-shadow 0.2s;
+}
+
+.section-advice > button:active, 
+.section-advice > button:disabled {
+    background-color: hsl(150, 83%, 39%);
+    transition: background-color 0.2s;
+}
+
+.section-advice > button img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+/* || Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution p {
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 36.875em) {
+
+    /* || Typography */
+
+    .section-advice .advice-id span {
+        font-size: 0.875rem;
+    }
+    
+    .section-advice .advice {
+        font-size: 1.875rem;
+    }
+        
+    .section-advice .advice.loading {
+        font-size: 1.2rem;
+    }
+    /* || Section advice */
+    
+    .section-advice {
+        padding: 5em 4em 7.3em;
+    }
+    
+}

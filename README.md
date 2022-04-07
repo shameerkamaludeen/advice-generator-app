@@ -23,7 +23,8 @@ The challenge helps a hand on experience with the very basic API. This is the fi
 Users should be able to:
 
 - View the optimal layout for the component depending on their device's screen size
-- View random advice from each button click 
+- View random advice from each button click
+- Fetch advice from a third party API
 
 ### Screenshot
 
